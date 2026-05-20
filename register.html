@@ -15,33 +15,42 @@
 
 <div class="container d-flex justify-content-center align-items-center vh-100">
 
-    <div class="card p-4 shadow login-box">
+    <div class="card p-4 shadow login-box" style="width: 350px;">
 
         <h2 class="text-center mb-4">Register</h2>
 
-        <form onsubmit="return validateRegister()">
+        <form onsubmit="return validateRegister(event)">
 
             <input type="text" id="name"
             class="form-control mb-3"
-            placeholder="Enter Name">
+            placeholder="Enter Name"
+            required>
 
             <input type="email" id="regemail"
             class="form-control mb-3"
-            placeholder="Enter Email">
+            placeholder="Enter Email"
+            required>
 
             <input type="password" id="regpassword"
             class="form-control mb-3"
-            placeholder="Enter Password">
+            placeholder="Enter Password"
+            required>
 
             <input type="password" id="confirmpassword"
             class="form-control mb-3"
-            placeholder="Confirm Password">
+            placeholder="Confirm Password"
+            required>
 
-            <button class="btn btn-success w-100">
+            <button type="submit" class="btn btn-success w-100">
                 Register
             </button>
 
         </form>
+
+        <p class="text-center mt-3">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
 
     </div>
 
