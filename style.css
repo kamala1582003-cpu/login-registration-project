@@ -1,45 +1,56 @@
 body{
-    background: linear-gradient(135deg,#00b09b,#96c93d);
+    margin: 0;
+    padding: 0;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    background: linear-gradient(135deg, #000000, #1a1a1a, #2c2c2c);
+
     font-family: Arial, sans-serif;
 }
 
 .login-box{
     width: 350px;
-    border-radius: 20px;
-    animation: fadeIn 1s ease;
-    transition: 0.3s;
+    border-radius: 15px;
+    background-color: #111111;
+    color: white;
 }
 
-.login-box:hover{
-    transform: translateY(-5px);
+h2{
+    font-weight: bold;
+    color: white;
 }
 
-button{
-    transition: 0.3s;
+.form-control{
+    border-radius: 10px;
+    background-color: #222;
+    color: white;
+    border: 1px solid #444;
 }
 
-button:hover{
-    transform: scale(1.05);
+.form-control::placeholder{
+    color: #bbbbbb;
 }
 
-input:focus{
-    box-shadow: 0px 0px 10px #00b09b;
-    border-color:#00b09b;
+.form-control:focus{
+    background-color: #222;
+    color: white;
+    border-color: #0d6efd;
+    box-shadow: none;
 }
 
-@keyframes fadeIn{
+.btn{
+    border-radius: 10px;
+}
 
-    from{
-        opacity:0;
-        transform: translateY(-30px);
-    }
+p{
+    color: white;
+}
 
-    to{
-        opacity:1;
-        transform: translateY(0);
-    }
+a{
+    color: #4da3ff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
